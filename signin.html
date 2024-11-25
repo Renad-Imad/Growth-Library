@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="images/tab-icon.svg">
+</head>
+<body class="signin-page">
+    <header>
+        <img src="images/book.png" alt="Library Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+            <h1 class="signin-heading">Sign In</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><h2><i>Sign in to your account</i></h2></legend>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required="required"><br><br>
+
+                <input type="submit" value="Sign In" id="submit"
+                    onmousedown="handleMouseDown()" 
+                    onmouseup="handleMouseUp()">
+                </fieldset>
+            </form>
+    
+    <footer>
+    <p>&copy; 2024 Growth Library. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function handleMouseDown() {
+            document.getElementById("submit").style.backgroundColor = "darkgreen";
+        }
+
+        function handleMouseUp() {
+            document.getElementById("submit").style.backgroundColor = "green";
+        }
+    </script>
+
+</body>
+</html>

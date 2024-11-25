@@ -1,0 +1,389 @@
+body {
+    font-family: Arial, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*--home page--*/
+.home-page {
+    background-image: url('images/background\ img.png');
+    background-repeat: no-repeat;         
+    background-size: cover;
+}
+p:first-letter{
+    font-size: 30px;
+}
+.home-page #p-1 {
+    font-family: serif;
+    color: lightcoral;
+    font-size: 19px;
+    margin-left: 150px;
+    line-height: 1.8;
+    cursor: pointer;
+}
+.home-page h3 {
+    font-family: serif;
+    color: rebeccapurple;
+    font-size: 25px;
+    text-align: center;
+}
+.home-page h4 {
+    font-family: serif;
+    color: plum;
+    margin-left: 150px;
+    font-size: 24px;
+}
+.home-page #ul-1 {
+    list-style-type: square;
+    color: rgb(203, 149, 203);
+    font-family: serif;
+    margin-left: 170px;
+    line-height: 1.7;
+    font-size: 18px;
+}
+.sticker {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 450px;
+    height: auto;
+}
+
+
+
+/*--aboutus page--*/
+.aboutus-page {
+    background-color: rgb(255, 241, 240);
+    font-family: serif;
+}
+.aboutus-page h2, .aboutus-page h3 {
+    color: rgb(46, 167, 46);
+    margin-left: 60px;
+}
+.aboutus-page #p-2 {
+    line-height: 1.4;
+    color: rgb(185, 129, 185);
+    margin-left: 75px;
+    font-size: 17px;
+}
+.aboutus-page #ol-1, .aboutus-page #ul-2 {
+    margin-left: 80px;
+    font-size: 17px;
+}
+.aboutus-page #ol-1 li {
+    margin-bottom: 5px;
+    list-style-type: decimal;
+    color: plum;
+}
+.aboutus-page #ul-2 li {
+    margin-bottom: 5px;
+    list-style-type: square;
+    color: plum;
+}
+.video-container {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 80px;
+}
+.video-container video {
+    width: 580px;
+    height: 252px;
+    border: 8px solid rgb(154, 96, 154);
+
+}
+
+
+
+/*--books--*/
+body.books-page {
+    background-color: rgb(255, 241, 240);
+}
+.books-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: green;
+}
+.books-row #p-4 {
+    color: #6AA84F;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.2rem;
+    max-width: 600px; 
+    margin: -29px 0 0 200px;
+}
+section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+.card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #eac7d5;
+    border-radius: 0 0 10px 10px;
+    color: #577e55;
+    transition: background-color 0.3s, color 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+}
+.card:hover h2 {
+    background-color: #9d6262;
+    color: #fff;
+}
+a.card h2 {
+    text-decoration: underline; 
+    text-decoration-color: #577e55; 
+    color: #577e55; 
+}
+a.card:hover h2 {
+    color: #fff; 
+    text-decoration-color: #fff;
+}
+.card-table {
+    width: 100%; 
+    margin: 20px 0; 
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', 'Times New Roman', serif; 
+    color: #d185a2; 
+    display: none;
+}
+th {
+    background-color: #6AA84F; 
+    color: #fff; 
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px; 
+}
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fdfdfd; 
+}
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.arrow.down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #9f7777;
+    margin: 10px auto;
+    display: block;
+}
+
+
+
+/*--sign--*/
+.signin-page {
+    background-color: rgb(255, 241, 240);
+}
+.signup-page {
+    background-color: rgb(255, 241, 240);
+}
+
+
+
+/*--contact--*/
+.contactus-page {
+    background-color: rgb(255, 241, 240);
+}
+.inquiry-section {
+    position: absolute;
+    bottom: 140px;
+    padding: 10px;
+    border: 3px solid green;
+    background-color: rgba(193, 255, 207, 0.667);
+    width: 550px;
+    margin-left: 40px;
+}
+.inquiry-section textarea {
+    width: 97%; 
+    height: 80px;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.inquiry-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contactus-page #p-3 {
+    font-family: serif;
+    color: darkgreen;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.contactus-page h4 {
+    color: darkgreen;
+    margin-left: 40px;
+    background-color: mistyrose;
+}
+.contactus-page #ul-3 {
+    color: darkgreen;
+    list-style-type: circle;
+    margin-left: 40px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    cursor: pointer;
+}
+.contactus-page #ul-2 {
+    color: darkgreen;
+    list-style-type: circle;
+    margin-left: 40px;
+    font-size: 18px;
+
+}
+
+
+
+header {
+    background-color: snow;
+    padding: 10px;
+    text-align: center;
+    font-family: serif;
+}
+
+#ColorPicker {
+    float: right;
+    margin-right: 10px;
+    color: green;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    font-family:serif;
+}
+nav ul li a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    margin: auto 60px auto 10px;
+    text-align: center;
+    transition: 0.2s ease;
+    font-size: 17px;
+}
+nav ul li a:hover {
+    color: lightpink;
+}
+
+h1 {
+    font-family:serif;
+    margin: 20px 0;
+}
+.home-heading {
+    color: green;
+    font-size: 36px;
+    text-align: center;
+}
+.aboutus-heading {
+    color: green;
+    font-size: 34px;
+    text-align: center;
+}
+.signin-heading {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+.signup-heading {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+.contactus-heading {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
+fieldset {
+    margin-top: 70px;
+    padding: 10px;
+    border: 3px solid green;
+    background-color: mistyrose;
+    font-family:serif;
+    width: 400px;
+    color: darkgreen;
+    margin-left: 80px;
+}
+#submit {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+fieldset h2:first-letter{font-size: 45px}
+
+footer {
+    background-color: snow;
+    color: green;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

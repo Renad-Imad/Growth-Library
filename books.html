@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="images/tab-icon.svg">
+</head>
+<body class="books-page">
+    <header>
+        <img src="images/book.png" alt="Library Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 class="books-heading"><i>Book Collection</i></h1>
+
+    <section class="books-section">
+        <div class="books-row">
+            <p id="p-4"><i>Discover a wide range of books across different genres.</i></p>
+
+            <div class="container">
+                <div>
+                    <a href="javascript:void(0)" class="card" onclick="toggleTable('fictionTable', this)">
+                        <img src="images/fiction.png" alt="Fiction & Fantasy">
+                        <h2>Fiction & Fantasy</h2>
+                        <i class="arrow down" style="display: none;"></i>
+                    </a>
+                    <table id="fictionTable" class="card-table" style="display:none;">
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                        </tr>
+                        <tr>
+                            <td>The Hobbit</td>
+                            <td>J.R.R. Tolkien</td>
+                        </tr>
+                        <tr>
+                            <td>Harry Potter</td>
+                            <td>J.K. Rowling</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="card" onclick="toggleTable('historyTable', this)">
+                        <img src="images/history.png" alt="History">
+                        <h2>History</h2>
+                        <i class="arrow down" style="display: none;"></i>
+                    </a>
+                    <table id="historyTable" class="card-table" style="display:none;">
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                        </tr>
+                        <tr>
+                            <td>Sapiens</td>
+                            <td>Yuval Noah Harari</td>
+                        </tr>
+                        <tr>
+                            <td>The History of the World</td>
+                            <td>J.M. Roberts</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="card" onclick="toggleTable('mysteryTable', this)">
+                        <img src="images/mystery.png" alt="Mystery, Thriller">
+                        <h2>Mystery, Thriller</h2>
+                        <i class="arrow down" style="display: none;"></i>
+                    </a>
+                    <table id="mysteryTable" class="card-table" style="display:none;">
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                        </tr>
+                        <tr>
+                            <td>The Da Vinci Code</td>
+                            <td>Dan Brown</td>
+                        </tr>
+                        <tr>
+                            <td>Gone Girl</td>
+                            <td>Gillian Flynn</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="card" onclick="toggleTable('childrenTable', this)">
+                        <img src="images/A_cheerful_and_colorful_book_cover_suitable_for_th.png" alt="Children's">
+                        <h2>Children's</h2>
+                        <i class="arrow down" style="display: none;"></i>
+                    </a>
+                    <table id="childrenTable" class="card-table" style="display:none;">
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                        </tr>
+                        <tr>
+                            <td>Matilda</td>
+                            <td>Roald Dahl</td>
+                        </tr>
+                        <tr>
+                            <td>Charlotte's Web</td>
+                            <td>E.B. White</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="card" onclick="toggleTable('teenTable', this)">
+                        <img src="images/teen.png" alt="Teen & Young Adult">
+                        <h2>Teen & Young Adult</h2>
+                        <i class="arrow down" style="display: none;"></i>
+                    </a>
+                    <table id="teenTable" class="card-table" style="display:none;">
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                        </tr>
+                        <tr>
+                            <td>The Fault in Our Stars</td>
+                            <td>John Green</td>
+                        </tr>
+                        <tr>
+                            <td>The Hunger Games</td>
+                            <td>Suzanne Collins</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="card" onclick="toggleTable('religionTable', this)">
+                        <img src="images/religion.png" alt="Religion">
+                        <h2>Religion</h2>
+                        <i class="arrow down" style="display: none;"></i>
+                    </a>
+                    <table id="religionTable" class="card-table" style="display:none;">
+                        <tr>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                        </tr>
+                        <tr>
+                            <td>The Bible</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>The Quran</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <footer>
+        <p>&copy; 2024 Growth Library. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTable(tableId, cardElement) {
+    var selectedTable = document.getElementById(tableId);
+    var arrow = cardElement.querySelector('.arrow.down');
+
+    if (selectedTable.style.display === 'table') {
+        selectedTable.style.display = 'none';
+        arrow.style.display = 'none';
+    } else {
+        var tables = document.querySelectorAll('.card-table');
+        tables.forEach(function(table) {
+            table.style.display = 'none'; 
+        });
+
+        var arrows = document.querySelectorAll('.arrow.down');
+        arrows.forEach(function(arrow) {
+            arrow.style.display = 'none';
+        });
+
+        selectedTable.style.display = 'table';
+        arrow.style.display = 'block';
+    }
+}
+
+    </script>
+</body>
+</html>

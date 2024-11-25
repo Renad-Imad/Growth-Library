@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="images/tab-icon.svg">
+</head>
+<body class="aboutus-page">
+    <header>
+        <img src="images/book.png" alt="Library Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <form id="ColorPicker">
+            <label for="colorPicker">Choose a background Color:</label>
+            <input type="color" id="colorPicker">
+        </form>
+    </header>
+            <h1 class="aboutus-heading">About Our Library</h1>
+
+        <h2><i>Our Mission & Vision</i></h2>
+        <p id="p-2"><i>
+            Growth Library is a nonprofit organization. Our mission is to be a catalyst for building community, <br> 
+            inspiring ceadera, and expanding bonk access for all through a global network. <br> 
+            Our vision is a Little free Library In every community and a book for every reader.
+        </i></p><br>
+
+        <h3><i>How do we achieve our mission and vision?</i></h3>
+        <ol id="ol-1"><i>
+            <li>Providing 24/7 book access.</li>
+            <li>Fostering new Little Free Librariesic.</li>
+            <li>Championing diverse books.</li>
+        </i></ol><br>
+
+        <h3><i>Our Values</i></h3>
+        <ul id="ul-2"><i>
+            <li>Access</li>
+            <li>Collaboration</li>
+            <li>Equity</li>
+            <li>Respect</li>
+            <li>Transparency</li>
+        </i></ul>
+
+    <div class="video-container">
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4" muted autoplay playsinline>
+        </video>
+    </div>
+
+    <footer>
+    <p>&copy; 2024 Growth Library. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("colorPicker").onchange = function() {
+            document.body.style.backgroundColor = this.value;
+        };
+    </script>
+    
+
+</body>
+</html>
